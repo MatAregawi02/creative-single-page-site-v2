@@ -1,0 +1,50 @@
+.menu{
+    background-color:#F94F4F;
+
+    @media (max-width : 600px){
+        background-color: #191921;
+    }
+    .nav-link{
+        color: #FFF;
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 200% */
+
+        &:hover{
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        @media (max-width : 768px){
+            font-size: 15px;
+        }
+        @media (max-width : 600px){
+            font-size: 18px;
+        }
+    }
+    .nav-btn{
+        background-color : #191921;
+        border : none;
+        //tyopgraphy bellow
+        color: #FFF;
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+        &:hover{
+            background-color : #434356;
+            cursor: pointer;
+        }
+
+        @media(max-width : 600px){
+            background-color: #F94F4F;
+        }
+    }
+ 
+}
+
+  
