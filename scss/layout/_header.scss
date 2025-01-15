@@ -112,3 +112,42 @@ header{
     }
 
 }
+
+.hero{
+    .container{
+        display : flex;
+        position : relative;
+       
+    }
+    img{
+        position : absolute;
+        z-index : 0;
+        right : 0;
+        left : 545px; //mantains responsiveness upon resize
+    }
+    .text-content{
+        
+        position : absolute;
+        z-index : 1;
+        left : 165px;
+        top : 112px;
+        right : 545px;
+
+        h1{
+            
+            width: 730px;
+            margin-bottom: 39px;
+        }
+        p{
+            width: 540px;
+            margin-bottom: 48px;
+        }
+        .hero-btn{
+            width: 177px;
+            height: 72px;
+        }
+        
+    }
+    
+  
+}

@@ -47,4 +47,38 @@
  
 }
 
-  
+.hero{
+    h1{
+        color: #000;
+        font-family: Commissioner;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 88px; /* 110% */
+        // overflow: hidden;     /* Hide any overflowed text */
+        // text-overflow: ellipsis;
+    }
+    p{
+        color: #000;
+        font-family: Commissioner;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px; /* 177.778% */
+    }
+    .hero-btn{
+        background: #F94F4F;
+        border : none;
+        color: #FFF;
+        font-family: Commissioner;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+        &:hover{
+            cursor : pointer;
+            background-color: #FF9393;
+        }
+    }
+}

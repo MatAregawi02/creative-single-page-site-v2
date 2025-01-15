@@ -48,6 +48,37 @@
   }
 }
 
+.hero h1 {
+  color: #000;
+  font-family: Commissioner;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 88px; /* 110% */
+}
+.hero p {
+  color: #000;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+.hero .hero-btn {
+  background: #F94F4F;
+  border: none;
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+.hero .hero-btn:hover {
+  cursor: pointer;
+  background-color: #FF9393;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -186,4 +217,34 @@ header nav .menu .nav-btn {
     transform: translateX(-50%);
     margin-bottom: 24px;
   }
+}
+
+.hero .container {
+  display: flex;
+  position: relative;
+}
+.hero img {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  left: 545px;
+}
+.hero .text-content {
+  position: absolute;
+  z-index: 1;
+  left: 165px;
+  top: 112px;
+  right: 545px;
+}
+.hero .text-content h1 {
+  width: 730px;
+  margin-bottom: 39px;
+}
+.hero .text-content p {
+  width: 540px;
+  margin-bottom: 48px;
+}
+.hero .text-content .hero-btn {
+  width: 177px;
+  height: 72px;
 }
