@@ -95,3 +95,54 @@
         }
     }
 }
+
+.section-one{
+    .card-one{
+        background: #191921;
+        .red-highlight-text{
+            color: #F94F4F;
+            font-family: Commissioner;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 64px; /* 114.286% */
+        }
+        h2{
+            @extend .red-highlight-text;
+            color : #FFF;
+        }
+
+        p{
+            color: #FFF;
+            font-family: Commissioner;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 177.778% */
+        }
+    
+    
+        a{
+            text-decoration: none;
+            color: #F94F4F;
+            font-family: Commissioner;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: normal;
+
+            &:hover{
+                color: #FF9393;
+            }
+            &:hover::after{
+                background-color: #FF9393;
+            }
+            }
+        
+            a::after{
+                background-color: #F94F4F;
+            }
+            
+        }
+    
+}
