@@ -2,6 +2,9 @@ let hamburgerIcon = document.querySelector(".hamburger-icon");
 let crossIcon = document.querySelector(".cross-icon");
 let navigation = document.querySelector("nav");
 let menu = document.querySelector("ul");
+// let mobileHeroImage = document.querySelector(".mobile-hero-img");
+// let tabletHeroImage = document.querySelector(".tablet-hero-img");
+// let desktopHeroImage = document.querySelector(".desktop-hero-img");
 // let mobileWidth = `${600}px`;
 
 

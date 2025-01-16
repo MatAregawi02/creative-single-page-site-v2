@@ -1,8 +1,9 @@
 //let me start from a desktop first design
+.hidden{
+    display : none;
+}
 header{
-    .hidden{
-        display : none;
-    }
+   
     .container{
         display : flex;
         padding-left : 165px;
@@ -11,8 +12,9 @@ header{
         .mobile-nav-icons{
             display : none;
         }
-        @media( max-width : 768px){
+        @media(max-width : 768px){
             gap : 130px;
+            padding-left: 39px;
         }
         @media(max-width : 600px){
             height : 110px;
@@ -34,6 +36,9 @@ header{
                     opacity: 0.5;
                 }
             }
+        }
+        @media (max-width : 600px) and (min-width : 450px){
+            gap : 50%;
         }
     }
     img{
@@ -117,13 +122,45 @@ header{
     .container{
         display : flex;
         position : relative;
+
+        @media(max-width : 600px){
+            flex-direction : column-reverse;
+        }
        
     }
-    img{
+    
+    .desktop-hero-img{
         position : absolute;
         z-index : 0;
         right : 0;
         left : 545px; //mantains responsiveness upon resize
+
+        @media(max-width : 768px){
+            display : none;
+        }
+    }
+    .tablet-hero-img{
+        display : none;
+        @media(max-width : 768px){
+            display : inline-block;
+            position : absolute;
+            left : 330px;
+        }
+        @media(max-width : 600px){
+            display : none;
+        }
+    }
+    .mobile-hero-img{
+        display : none;
+        @media(max-width : 600px){
+            display : block;
+            width : 100%;
+            position : absolute;
+            top : 0;
+            right : 0;
+            left : 0;
+            z-index : -1;
+        }
     }
     .text-content{
         
@@ -132,15 +169,54 @@ header{
         left : 165px;
         top : 112px;
         right : 545px;
+        
+        @media(max-width : 768px){
+            top : 77px;
+            left : 39px;
+        }
+        @media(max-width : 600px){
+            position : static;
+            margin-top: 256px;
+            margin-left: 24px;
+        }
+        @media (max-width : 600px) and (min-width : 450px){
+            margin-top: 330px;
+        }
 
         h1{
             
             width: 730px;
             margin-bottom: 39px;
+            
+            @media(max-width : 768px){
+                width: 398px;
+                height: 181px;
+                margin-bottom: 19px;
+            }
+            @media(max-width : 600px){
+                width: 327px;
+                height : auto;
+                margin-bottom: 15px;
+            }
+            @media (max-width : 600px) and (min-width : 450px){
+                width : 450px;
+                margin-bottom: 35px;
+            }
         }
         p{
             width: 540px;
             margin-bottom: 48px;
+            
+            @media(max-width : 768px){
+                width : 398px;
+                margin-bottom: 32px;
+            }
+            @media(max-width : 600px){
+                width: 327px;
+            }
+            @media (max-width : 600px) and (min-width : 500px){
+                width : 450px;
+            }
         }
         .hero-btn{
             width: 177px;
