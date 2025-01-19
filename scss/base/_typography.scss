@@ -99,10 +99,11 @@
 .section-one{
     .card-one{
         background: #191921;
+       
         .red-highlight-text{
             color: #F94F4F;
             font-family: Commissioner;
-            font-size: 56px;
+            font-size: 32px;
             font-style: normal;
             font-weight: 800;
             line-height: 64px; /* 114.286% */
@@ -110,6 +111,13 @@
         h2{
             @extend .red-highlight-text;
             color : #FFF;
+            @media(max-width : 768px){
+                font-size: 32px;
+                line-height: 40px; /* 125% */
+            }
+            @media(max-width :600px){
+                
+            }
         }
 
         p{
@@ -119,6 +127,11 @@
             font-style: normal;
             font-weight: 400;
             line-height: 32px; /* 177.778% */
+            
+            @media(max-width : 768px){
+                font-size: 15px;
+                line-height: 25px; /* 166.667% */
+            }
         }
     
     
@@ -130,6 +143,10 @@
             font-style: normal;
             font-weight: 800;
             line-height: normal;
+
+            @media(max-width : 768px){
+                font-size: 15px;
+            }
 
             &:hover{
                 color: #FF9393;
