@@ -103,10 +103,14 @@
         .red-highlight-text{
             color: #F94F4F;
             font-family: Commissioner;
-            font-size: 32px;
+            font-size: 56px;
             font-style: normal;
             font-weight: 800;
             line-height: 64px; /* 114.286% */
+            @media(max-width : 768px){
+                font-size: 32px;
+                line-height: 40px;
+            }
         }
         h2{
             @extend .red-highlight-text;
@@ -115,9 +119,7 @@
                 font-size: 32px;
                 line-height: 40px; /* 125% */
             }
-            @media(max-width :600px){
-                
-            }
+        
         }
 
         p{
@@ -162,4 +164,58 @@
             
         }
     
+}
+
+.section-two{
+    h3{
+        color: #000;
+        font-family: Commissioner;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px; /* 114.286% */
+
+        @media(max-width : 768px){
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    .card-two{
+        .numbers{
+            color: #FFF;
+            font-family: Commissioner;
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 88px; /* 110% */
+            opacity: 0.25;
+
+        }
+        h4{
+            color: #FFF;
+            font-family: Commissioner;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 32px; /* 160% */
+            
+            @media(max-width : 768px){
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+        p{
+            color: #FFF;
+            font-family: Commissioner;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px; /* 177.778% */
+
+            @media(max-width : 768px){
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
 }

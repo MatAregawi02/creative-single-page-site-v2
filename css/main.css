@@ -103,10 +103,16 @@
 .section-one .card-one .red-highlight-text, .section-one .card-one h2 {
   color: #F94F4F;
   font-family: Commissioner;
-  font-size: 32px;
+  font-size: 56px;
   font-style: normal;
   font-weight: 800;
   line-height: 64px; /* 114.286% */
+}
+@media (max-width: 768px) {
+  .section-one .card-one .red-highlight-text, .section-one .card-one h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 .section-one .card-one h2 {
   color: #FFF;
@@ -153,6 +159,58 @@
 }
 .section-one .card-one a::after {
   background-color: #F94F4F;
+}
+
+.section-two h3 {
+  color: #000;
+  font-family: Commissioner;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 114.286% */
+}
+@media (max-width: 768px) {
+  .section-two h3 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.section-two .card-two .numbers {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 88px; /* 110% */
+  opacity: 0.25;
+}
+.section-two .card-two h4 {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px; /* 160% */
+}
+@media (max-width: 768px) {
+  .section-two .card-two h4 {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+.section-two .card-two p {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+@media (max-width: 768px) {
+  .section-two .card-two p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }
 
 html {
@@ -494,7 +552,7 @@ header nav .menu .nav-btn {
   .section-one .section-one-mobile-img {
     display: inline-block;
     width: 100%;
-    height: 200px;
+    height: auto;
   }
 }
 .section-one h2 {
@@ -502,7 +560,6 @@ header nav .menu .nav-btn {
 }
 @media (max-width: 768px) {
   .section-one h2 {
-    word-wrap: break-word;
     margin-bottom: 32px;
   }
 }
@@ -544,9 +601,75 @@ header nav .menu .nav-btn {
 }
 @media (max-width: 600px) {
   .section-one .wavy-red-pattern {
-    top: 185px;
-    right: 288px;
-    left: 34px;
-    bottom: 363px;
+    position: static;
+    margin-top: -392px;
+    margin-left: 24px;
   }
+}
+
+.section-two .container {
+  display: flex;
+  flex-shrink: 0;
+  position: relative;
+}
+.section-two h3 {
+  z-index: 1;
+  margin-left: 165px;
+  margin-top: 200px;
+  width: 540px;
+}
+@media (max-width: 768px) {
+  .section-two h3 {
+    width: 281px;
+    margin-top: 126px;
+    margin-left: 39px;
+  }
+}
+.section-two .card-two {
+  background-color: #F94F4F;
+  padding: 200px 106px 144px 285px;
+  flex-shrink: 0;
+  position: absolute;
+  top: -200px;
+  left: 545px;
+}
+@media (max-width: 768px) {
+  .section-two .card-two {
+    padding: 120px 40px 120px 43px;
+    left: 330px;
+    top: -120px;
+  }
+}
+.section-two .card-two .content {
+  width: 504px;
+  height: 196px;
+  padding-left: 59px;
+  flex-shrink: 0;
+  margin-bottom: 56px;
+}
+@media (max-width: 768px) {
+  .section-two .card-two .content {
+    width: 355px;
+    height: 159px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
+  }
+}
+.section-two .card-two .content h4 {
+  margin-top: -44px;
+  margin-bottom: 24px;
+}
+@media (max-width: 768px) {
+  .section-two .card-two .content h4 {
+    margin-bottom: 15px;
+    margin-left: -43px;
+  }
+}
+@media (max-width: 768px) {
+  .section-two .card-two .content p {
+    margin-left: -43px;
+  }
+}
+.section-two .card-two .content .numbers {
+  margin-left: -59px;
 }
