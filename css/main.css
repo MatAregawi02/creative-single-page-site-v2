@@ -175,6 +175,14 @@
     line-height: 40px;
   }
 }
+@media (max-width: 600px) {
+  .section-two h3 {
+    color: #FFF;
+  }
+}
+.section-two .card-two {
+  background-color: #F94F4F;
+}
 .section-two .card-two .numbers {
   color: #FFF;
   font-family: Commissioner;
@@ -612,6 +620,11 @@ header nav .menu .nav-btn {
   flex-shrink: 0;
   position: relative;
 }
+@media (max-width: 600px) {
+  .section-two .container {
+    flex-direction: column;
+  }
+}
 .section-two h3 {
   z-index: 1;
   margin-left: 165px;
@@ -625,8 +638,15 @@ header nav .menu .nav-btn {
     margin-left: 39px;
   }
 }
+@media (max-width: 600px) {
+  .section-two h3 {
+    margin: 0;
+    padding: 0;
+    margin-left: 24px;
+    margin-top: 459px;
+  }
+}
 .section-two .card-two {
-  background-color: #F94F4F;
   padding: 200px 106px 144px 285px;
   flex-shrink: 0;
   position: absolute;
@@ -638,6 +658,14 @@ header nav .menu .nav-btn {
     padding: 120px 40px 120px 43px;
     left: 330px;
     top: -120px;
+  }
+}
+@media (max-width: 600px) {
+  .section-two .card-two {
+    width: 100%;
+    padding: 265px 24px 96px 24px;
+    left: 0;
+    top: 363px;
   }
 }
 .section-two .card-two .content {
@@ -653,6 +681,13 @@ header nav .menu .nav-btn {
     height: 159px;
     flex-shrink: 0;
     margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .section-two .card-two .content {
+    width: 327px;
+    height: 159px;
+    flex-shrink: 0;
   }
 }
 .section-two .card-two .content h4 {

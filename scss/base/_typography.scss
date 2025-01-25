@@ -179,8 +179,12 @@
             font-size: 32px;
             line-height: 40px;
         }
+        @media(max-width : 600px){
+            color :#FFF;
+        }
     }
     .card-two{
+        background-color: #F94F4F;
         .numbers{
             color: #FFF;
             font-family: Commissioner;
