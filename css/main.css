@@ -221,6 +221,45 @@
   }
 }
 
+.section-three .card-three {
+  background-color: #191921;
+}
+.section-three .card-three h5 {
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 114.286% */
+}
+.section-three .card-three .left-arrow {
+  margin-right: 16px;
+}
+.section-three .card-three .left-arrow:hover, .section-three .card-three .right-arrow:hover {
+  cursor: pointer;
+}
+.section-three .card-three .left-arrow:hover circle, .section-three .card-three .left-arrow:hover path, .section-three .card-three .right-arrow:hover circle, .section-three .card-three .right-arrow:hover path {
+  stroke: #FF9393;
+}
+.section-three .caption-title {
+  color: #FFF;
+  text-align: right;
+  font-family: Commissioner;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px; /* 160% */
+}
+.section-three .caption-date {
+  color: #FFF;
+  text-align: right;
+  font-family: Commissioner;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+}
+
 html {
   box-sizing: border-box;
 }
@@ -707,4 +746,53 @@ header nav .menu .nav-btn {
 }
 .section-two .card-two .content .numbers {
   margin-left: -59px;
+}
+
+.section-three .container {
+  margin-top: 508px;
+  display: flex;
+  position: relative;
+}
+.section-three .container .card-three {
+  width: 735px;
+  height: 528px;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 1;
+  padding: 152px 125px 152px 165px;
+}
+.section-three .container .card-three h5 {
+  width: 445px;
+  height: 133px;
+  flex-shrink: 0;
+  margin-bottom: 51px;
+}
+.section-three .container .slide-one-img {
+  position: absolute;
+  z-index: -1;
+  left: 545px;
+}
+.section-three .container .caption {
+  opacity: 0.75;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  width: 895px;
+  height: 200px;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 0;
+  top: 528px;
+  left: 545px;
+  padding: 68px 154px 68px 525px;
+}
+.section-three .container .caption .caption-content {
+  width: 215px;
+  height: 64px;
+}
+.section-three .container .wavy-white-img {
+  position: absolute;
+  z-index: 2;
+  top: 186px;
+  left: 668px;
+  right: 638px;
+  bottom: 482px;
 }

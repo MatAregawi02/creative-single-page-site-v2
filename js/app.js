@@ -35,3 +35,5 @@ window.addEventListener('resize',function(){
         crossIcon.style.display = "none";
     }
 });
+
+//section three, dynamic content switching??

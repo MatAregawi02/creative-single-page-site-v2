@@ -215,3 +215,52 @@
 .section-two .card-two .content .numbers {
   margin-left: -59px;
 }
+
+.section-three .container {
+  margin-top: 508px;
+  display: flex;
+  position: relative;
+}
+.section-three .container .card-three {
+  width: 735px;
+  height: 528px;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 1;
+  padding: 152px 125px 152px 165px;
+}
+.section-three .container .card-three h5 {
+  width: 445px;
+  height: 133px;
+  flex-shrink: 0;
+  margin-bottom: 51px;
+}
+.section-three .container .slide-one-img {
+  position: absolute;
+  z-index: -1;
+  left: 545px;
+}
+.section-three .container .caption {
+  opacity: 0.75;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+  width: 895px;
+  height: 200px;
+  flex-shrink: 0;
+  position: absolute;
+  z-index: 0;
+  top: 528px;
+  left: 545px;
+  padding: 68px 154px 68px 525px;
+}
+.section-three .container .caption .caption-content {
+  width: 215px;
+  height: 64px;
+}
+.section-three .container .wavy-white-img {
+  position: absolute;
+  z-index: 2;
+  top: 186px;
+  left: 668px;
+  right: 638px;
+  bottom: 482px;
+}

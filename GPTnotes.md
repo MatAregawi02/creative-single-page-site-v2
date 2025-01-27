@@ -24,3 +24,9 @@
   box-shadow: $box-shadow;
   opacity: $opacity;
 }
+
+# The use of srcset attribute to reduce repetitive html...
+
+<!-- <img src="image-default.jpg" 
+     srcset="image-small.jpg 500w, image-medium.jpg 1000w, image-large.jpg 2000w" 
+     alt="example image"> --!>
