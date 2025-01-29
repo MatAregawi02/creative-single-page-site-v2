@@ -205,6 +205,10 @@
         margin-top: 508px;
         display : flex;
         position : relative;
+
+        @media(max-width : 768px){
+            margin-top: 470px; //how??
+        }
         .card-three{
         
            width: 735px;
@@ -214,17 +218,43 @@
             z-index: 1;
             padding : 152px 125px 152px 165px;
 
+            @media(max-width : 768px){
+                width: 390px;
+                height: 352px;
+                padding : 100px 70px 100px 39px;
+            }
+
             h5{
                 width: 445px;
                 height: 133px;
                 flex-shrink: 0;
                 margin-bottom: 51px;
+
+                @media(max-width : 768px){
+                    width: 281px;
+                    height : 80px;
+                    margin-bottom: 32px;
+                }
             }
         }
-        .slide-one-img{
+        .slide-one-img-desktop{
             position : absolute;
             z-index : -1;
             left : 545px;
+
+            @media(max-width : 768px){
+                display : none;
+            }
+        }
+        .slide-one-img-tablet{
+            display : none;
+
+            @media(max-width : 768px){
+                display : inline-block;
+                position : absolute;
+                z-index : -1;
+                left : 330px;
+            }
         }
         .caption{
             opacity: 0.75;
@@ -237,9 +267,22 @@
             top : 528px;
             left : 545px;
             padding : 68px 154px 68px 525px;
+
+            @media(max-width : 768px){
+                width: 438px;
+                height: 130px;
+                padding : 45px 40px 45px 236px;
+                top : 345px;
+                left : 330px;
+            }
             .caption-content{
                 width : 215px;
                 height : 64px;
+
+                @media(max-width : 768px){
+                    width : 161px;
+                    height : 40px;
+                }
             }
         }
 
@@ -250,6 +293,15 @@
             left : 668px;
             right : 638px;
             bottom : 482px;
+
+            @media(max-width : 768px){
+                width: 62.533px;
+                height: 28.525px;
+                flex-shrink: 0;
+                top : 126px; 
+                left : 359px;
+                transform: rotateY(180deg); //icon flips over for tablet screens
+            }
         }
     }
     
