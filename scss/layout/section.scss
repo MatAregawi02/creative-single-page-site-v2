@@ -205,10 +205,19 @@
         margin-top: 508px;
         display : flex;
         position : relative;
+        width : 100%;
+        height : auto;
+
 
         @media(max-width : 768px){
             margin-top: 470px; //how??
         }
+        @media(max-width : 600px){
+            flex-direction: column-reverse;
+            margin-top: 742px;
+        }
+       
+       
         .card-three{
         
            width: 735px;
@@ -222,6 +231,13 @@
                 width: 390px;
                 height: 352px;
                 padding : 100px 70px 100px 39px;
+
+            @media(max-width : 600px){
+                width: 100%;
+                height: 272px;
+                top : 404px;
+                padding : 64px 24px;
+            }
             }
 
             h5{
@@ -234,6 +250,9 @@
                     width: 281px;
                     height : 80px;
                     margin-bottom: 32px;
+                }
+                @media(max-width : 600px){
+                    margin-bottom: 24px;
                 }
             }
         }
@@ -255,6 +274,21 @@
                 z-index : -1;
                 left : 330px;
             }
+            @media(max-width : 600px){
+                display : none;
+            }
+        }
+        .slide-one-img-mobile{
+            display : none;
+
+           @media(max-width : 600px){
+            display : block;
+            width : 100%;
+            height : auto;
+            object-fit : cover; //to adjust image for vwidths b/n 500 and 600
+            //solved streching problem
+            
+           }
         }
         .caption{
             opacity: 0.75;
@@ -275,6 +309,15 @@
                 top : 345px;
                 left : 330px;
             }
+            @media(max-width : 600px){
+                width: 100%;
+                height: 111px;
+                padding : 36px 32px 35px 48.27%;
+                //padding right is a percentage for responsive reasons
+                top : 293px;
+                left : 0;
+            }
+           
             .caption-content{
                 width : 215px;
                 height : 64px;
@@ -301,6 +344,10 @@
                 top : 126px; 
                 left : 359px;
                 transform: rotateY(180deg); //icon flips over for tablet screens
+            }
+
+            @media(max-width : 600px){
+                display : none;
             }
         }
     }

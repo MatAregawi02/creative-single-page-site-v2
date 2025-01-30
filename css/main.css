@@ -770,10 +770,18 @@ header nav .menu .nav-btn {
   margin-top: 508px;
   display: flex;
   position: relative;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 768px) {
   .section-three .container {
     margin-top: 470px;
+  }
+}
+@media (max-width: 600px) {
+  .section-three .container {
+    flex-direction: column-reverse;
+    margin-top: 742px;
   }
 }
 .section-three .container .card-three {
@@ -791,6 +799,14 @@ header nav .menu .nav-btn {
     padding: 100px 70px 100px 39px;
   }
 }
+@media (max-width: 768px) and (max-width: 600px) {
+  .section-three .container .card-three {
+    width: 100%;
+    height: 272px;
+    top: 404px;
+    padding: 64px 24px;
+  }
+}
 .section-three .container .card-three h5 {
   width: 445px;
   height: 133px;
@@ -802,6 +818,11 @@ header nav .menu .nav-btn {
     width: 281px;
     height: 80px;
     margin-bottom: 32px;
+  }
+}
+@media (max-width: 600px) {
+  .section-three .container .card-three h5 {
+    margin-bottom: 24px;
   }
 }
 .section-three .container .slide-one-img-desktop {
@@ -825,6 +846,22 @@ header nav .menu .nav-btn {
     left: 330px;
   }
 }
+@media (max-width: 600px) {
+  .section-three .container .slide-one-img-tablet {
+    display: none;
+  }
+}
+.section-three .container .slide-one-img-mobile {
+  display: none;
+}
+@media (max-width: 600px) {
+  .section-three .container .slide-one-img-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
 .section-three .container .caption {
   opacity: 0.75;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
@@ -844,6 +881,15 @@ header nav .menu .nav-btn {
     padding: 45px 40px 45px 236px;
     top: 345px;
     left: 330px;
+  }
+}
+@media (max-width: 600px) {
+  .section-three .container .caption {
+    width: 100%;
+    height: 111px;
+    padding: 36px 32px 35px 48.27%;
+    top: 293px;
+    left: 0;
   }
 }
 .section-three .container .caption .caption-content {
@@ -872,5 +918,10 @@ header nav .menu .nav-btn {
     top: 126px;
     left: 359px;
     transform: rotateY(180deg);
+  }
+}
+@media (max-width: 600px) {
+  .section-three .container .wavy-white-img {
+    display: none;
   }
 }
