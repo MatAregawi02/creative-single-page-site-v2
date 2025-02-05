@@ -52,3 +52,7 @@ function updateNavVisibility(){
 window.addEventListener('resize',updateNavVisibility); //up on resize, make necessary changes to the menu
 updateNavVisibility(); //initial setup on page load
 //when the page is loaded, the correct menu form is shown based on the screen size!
+
+# Z-index and the stacking context
+
+Whenever I use z-index for a certain section, I notice that the section below it, falls behind as if the previous section wasn't there. That's because z-index lifts the content up, and whatever comes after it is shoved below.

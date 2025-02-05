@@ -27,7 +27,7 @@
     .nav-btn{
         background-color : #191921;
         border : none;
-        //tyopgraphy bellow
+        //tyopgraphy below
         color: #FFF;
         font-family: Commissioner;
         font-size: 16px;
@@ -283,4 +283,31 @@
         }
     }
     //no changes in typography for section 3 for mobile view
+}
+
+footer{
+    h6{
+        color: #000;
+        font-family: Commissioner;
+        font-size: 56px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px; /* 114.286% */
+    }
+    .footer-btn{
+        background: #F94F4F;
+        border : none;
+        //tyopgraphy below
+        color: #FFF;
+        font-family: Commissioner;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+
+        &:hover{
+            background-color : #FF9393;
+            cursor: pointer;
+        }
+    }
 }

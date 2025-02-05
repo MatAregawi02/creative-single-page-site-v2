@@ -278,6 +278,29 @@
   }
 }
 
+footer h6 {
+  color: #000;
+  font-family: Commissioner;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 114.286% */
+}
+footer .footer-btn {
+  background: #F94F4F;
+  border: none;
+  color: #FFF;
+  font-family: Commissioner;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+footer .footer-btn:hover {
+  background-color: #FF9393;
+  cursor: pointer;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -924,4 +947,34 @@ header nav .menu .nav-btn {
   .section-three .container .wavy-white-img {
     display: none;
   }
+}
+
+footer .container {
+  padding: 120px 165px 115px 165px;
+  width: 100%;
+  margin-top: 728px;
+  position: relative;
+}
+footer .container svg {
+  position: absolute;
+  left: 0px;
+  top: 154px;
+  bottom: 154px;
+  z-index: 0;
+}
+footer .container .footer-content {
+  display: flex;
+  align-items: center;
+  gap: 276px;
+}
+footer .container .footer-content h6 {
+  width: 635px;
+  height: 133px;
+  flex-shrink: 0;
+}
+footer .container .footer-content .footer-btn {
+  width: 199px;
+  height: 64px;
+  flex-shrink: 0;
+  padding: 23px 44px 21px 45px;
 }

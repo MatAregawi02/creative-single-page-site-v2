@@ -1,0 +1,35 @@
+footer{
+    .container{
+        padding : 120px 165px 115px 165px;
+        width : 100%;
+        margin-top: 728px;
+        position : relative;
+        svg{
+            //the svg has already been modified; I just needed to move it to the left
+            position : absolute;
+            left : 0px;
+            top : 154px;
+            bottom : 154px;
+            z-index : 0;
+        }
+
+    .footer-content{
+        display : flex;
+        align-items: center;
+        gap : 276px;
+
+        h6{
+            width: 635px;
+            height: 133px;
+            flex-shrink: 0;
+        }
+
+        .footer-btn{
+            width: 199px;
+            height: 64px;
+            flex-shrink: 0;
+            padding : 23px 44px 21px 45px;
+        }
+    }
+    }
+}
