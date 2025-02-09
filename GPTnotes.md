@@ -56,3 +56,5 @@ updateNavVisibility(); //initial setup on page load
 # Z-index and the stacking context
 
 Whenever I use z-index for a certain section, I notice that the section below it, falls behind as if the previous section wasn't there. That's because z-index lifts the content up, and whatever comes after it is shoved below.
+
+# Excessive use of position property leads to poor design

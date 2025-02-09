@@ -202,10 +202,11 @@
 }
 .section-three{
     .container{
+        // border : 3px solid purple;
         margin-top: 508px;
         display : flex;
         position : relative;
-        width : 100%;
+        max-width : 100%;
         height : auto;
 
 
@@ -214,7 +215,8 @@
         }
         @media(max-width : 600px){
             flex-direction: column-reverse;
-            margin-top: 742px;
+            margin-top: 700px; //fixed it by trial and error (742 - 42)
+            height : 100%;
         }
        
        
@@ -223,7 +225,7 @@
            width: 735px;
             height: 528px;
             flex-shrink: 0;
-            position :absolute;
+            position : absolute;
             z-index: 1;
             padding : 152px 125px 152px 165px;
 
@@ -278,14 +280,16 @@
                 display : none;
             }
         }
-        .slide-one-img-mobile{
+         .slide-one-img-mobile{
             display : none;
 
            @media(max-width : 600px){
-            display : block;
+            position : absolute; //it's dimensions won't be recognized....
+            display : inline-block;
             width : 100%;
             height : auto;
-            object-fit : cover; //to adjust image for vwidths b/n 500 and 600
+            min-height : 405px;
+            // object-fit : cover; //to adjust image for vwidths b/n 500 and 600
             //solved streching problem
             
            }

@@ -286,6 +286,12 @@ footer h6 {
   font-weight: 800;
   line-height: 64px; /* 114.286% */
 }
+@media (max-width: 768px) {
+  footer h6 {
+    font-size: 32px;
+    line-height: 40px; /* 125% */
+  }
+}
 footer .footer-btn {
   background: #F94F4F;
   border: none;
@@ -793,7 +799,7 @@ header nav .menu .nav-btn {
   margin-top: 508px;
   display: flex;
   position: relative;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 @media (max-width: 768px) {
@@ -804,7 +810,8 @@ header nav .menu .nav-btn {
 @media (max-width: 600px) {
   .section-three .container {
     flex-direction: column-reverse;
-    margin-top: 742px;
+    margin-top: 700px;
+    height: 100%;
   }
 }
 .section-three .container .card-three {
@@ -879,10 +886,11 @@ header nav .menu .nav-btn {
 }
 @media (max-width: 600px) {
   .section-three .container .slide-one-img-mobile {
-    display: block;
+    position: absolute;
+    display: inline-block;
     width: 100%;
     height: auto;
-    object-fit: cover;
+    min-height: 405px;
   }
 }
 .section-three .container .caption {
@@ -951,9 +959,22 @@ header nav .menu .nav-btn {
 
 footer .container {
   padding: 120px 165px 115px 165px;
-  width: 100%;
+  max-width: 100%;
   margin-top: 728px;
   position: relative;
+}
+@media (max-width: 768px) {
+  footer .container {
+    padding: 70px 40px 109px 39px;
+    margin-top: 472px;
+  }
+}
+@media (max-width: 600px) {
+  footer .container {
+    margin-top: 776px;
+    margin-bottom: 100px;
+    padding: 0px 24px;
+  }
 }
 footer .container svg {
   position: absolute;
@@ -962,15 +983,43 @@ footer .container svg {
   bottom: 154px;
   z-index: 0;
 }
+@media (max-width: 768px) {
+  footer .container svg {
+    display: none;
+  }
+}
 footer .container .footer-content {
   display: flex;
   align-items: center;
   gap: 276px;
 }
+@media (max-width: 768px) {
+  footer .container .footer-content {
+    gap: 92px;
+  }
+}
+@media (max-width: 600px) {
+  footer .container .footer-content {
+    flex-direction: column;
+    gap: 47px;
+    align-items: start;
+  }
+}
 footer .container .footer-content h6 {
   width: 635px;
   height: 133px;
   flex-shrink: 0;
+}
+@media (max-width: 768px) {
+  footer .container .footer-content h6 {
+    width: 398px;
+    height: 80px;
+  }
+}
+@media (max-width: 600px) {
+  footer .container .footer-content h6 {
+    width: 327px;
+  }
 }
 footer .container .footer-content .footer-btn {
   width: 199px;

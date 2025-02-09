@@ -293,6 +293,11 @@ footer{
         font-style: normal;
         font-weight: 800;
         line-height: 64px; /* 114.286% */
+
+        @media(max-width : 768px){
+            font-size: 32px;
+            line-height: 40px; /* 125% */
+        }
     }
     .footer-btn{
         background: #F94F4F;

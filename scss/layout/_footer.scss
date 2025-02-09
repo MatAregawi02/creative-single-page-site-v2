@@ -1,9 +1,26 @@
 footer{
     .container{
         padding : 120px 165px 115px 165px;
-        width : 100%;
+        max-width : 100%;
         margin-top: 728px;
         position : relative;
+
+        @media(max-width : 768px){
+            padding : 70px 40px 109px 39px;
+            margin-top: 472px;
+        }
+
+        @media(max-width : 600px){
+            margin-top: 776px; //since the image and the card above it have a position of absolute
+            //it's margin top will be measured from the red card which has stable dimensions across
+            //multiple widths...
+            //margin-top : 272px;
+            margin-bottom: 100px;
+            padding : 0px 24px;
+        }
+        
+    
+
         svg{
             //the svg has already been modified; I just needed to move it to the left
             position : absolute;
@@ -11,17 +28,39 @@ footer{
             top : 154px;
             bottom : 154px;
             z-index : 0;
+
+            @media(max-width : 768px){
+                display : none;
+            }
         }
 
     .footer-content{
         display : flex;
         align-items: center;
         gap : 276px;
+       
+        @media(max-width : 768px){
+            gap : 92px;
+        }
+
+        @media(max-width : 600px){
+            flex-direction: column;
+            gap : 47px;
+            align-items: start;
+        }
 
         h6{
             width: 635px;
             height: 133px;
             flex-shrink: 0;
+
+            @media(max-width : 768px){
+                width : 398px;
+                height : 80px;
+            }
+            @media(max-width : 600px){
+                width : 327px;
+            }
         }
 
         .footer-btn{
