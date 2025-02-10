@@ -58,3 +58,10 @@ updateNavVisibility(); //initial setup on page load
 Whenever I use z-index for a certain section, I notice that the section below it, falls behind as if the previous section wasn't there. That's because z-index lifts the content up, and whatever comes after it is shoved below.
 
 # Excessive use of position property leads to poor design
+
+
+# List of Improvments to be made include
+
+- A dynamic way to switch between desktop, tablet and mobile images when viewport width changes. I wrote a lengthy css code to switch between the three images, but I believe that the same effect can be achieved using a dynamic js code.
+
+- Other refactoring and touchups needed, but project is complete. 
